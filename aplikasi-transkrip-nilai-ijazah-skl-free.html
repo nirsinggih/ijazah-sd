@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Meta Tag untuk Preview Saat Dibagikan -->
+<meta property="og:title" content="Aplikasi Transkrip Nilai & SKL SD 2025" />
+<meta property="og:description" content="Aplikasi Excel sederhana untuk membuat transkrip nilai dan SKL sesuai Juknis 2025 SD Free" />
+<meta property="og:image" content="https://pembatik.web.id/transkrip-nilai-sd.jpg" />
+<meta property="og:url" content="https://pembatik.web.id/aplikasi-transkrip-nilai-ijazah-skl-free.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="https://pembatik.web.id/iconsd.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+  <title>Aplikasi Transkrip Nilai dan SKL SMP 2025</title>
+  <style>
+    :root {
+      --excel-green: #217346;
+      --excel-dark: #1a5c38;
+      --text-light: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', Calibri, sans-serif;
+      height: 100%;
+      background: transparent;
+      color: var(--text-light);
+    }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://pembatik.web.id/d/tut%20wuri%20merah%202%2050.png') no-repeat center center;
+  background-size: 500px;
+  opacity: 0.5; /* Ubah sesuai kebutuhan transparansi */
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, var(--excel-green), var(--excel-dark));
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .content {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .content h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Pirata One', cursive;
+}
+
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .content ul li {
+      margin-bottom: 10px;
+      font-family: 'Pirata One', cursive;
+      line-height: 1.6;  /* agar tidak terlalu rapat */
+      font-size: 1.2rem; /* tambahkan baris ini */
+      padding-left: 1.2em;
+      position: relative;
+    }
+
+    .content ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #ffffff;
+    }
+
+    .content p {
+      margin-top: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #ffffff;
+      color: var(--excel-green);
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e2e2e2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #dcdcdc;
+    }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Rasio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  padding-left: 1.2em;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.content ul li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.content ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.content ul li:nth-child(3) {
+  animation-delay: 0.9s;
+}
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wa-float {
+  animation: slideInDown 1s ease-out forwards;
+  opacity: 0; /* agar tidak muncul sebelum animasi */
+}
+
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Aplikasi Transkrip Nilai & SKL SD</h1>
+    <p>Format Excel Tahun 2025 yang Mudah dan Siap Pakai</p>
+  </header>
+
+  <section class="content">
+    <h2>Fitur Unggulan:</h2>
+    <ul>
+      <li>Sesuai Pedoman/Juknis Terbaru</li>
+      <li>Pengolahan Nilai Ijazah</li>
+      <li>Hasil Cetak Rapi dan Estetik</li>
+      <li>Mudah Diedit dan Dimodifikasi</li>
+      <li>Ringan dan Cepat Digunakan</li>
+      <li>FULL FREE tanpa kode password protect</li>
+    </ul>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/8EncBEN2Kuk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+    <p>
+      Mungkin sudah banyak aplikasi canggih berbasis web yang menawarkan fitur Transkrip Nilai dan SKL.
+      Namun dengan Excel sederhana ini, pengelolaan dokumen menjadi lebih mudah untuk diedit
+      dan disesuaikan dengan kebutuhan sekolah masing-masing.
+    </p>
+
+    <a href="https://youtu.be/8EncBEN2Kuk" class="btn">Unduh Aplikasi</a>
+	  
+	<p>
+      Ada pertanyaan? silahkah klik tombol WA disamping atau:
+    </p>
+	  <a href="https://youtu.be/8EncBEN2Kuk" class="btn">Buka Kolom Tanya Jawab</a>
+	  
+	  
+  </section>
+
+  <footer>
+    &copy; 2025 Aplikasi Transkrip Nilai & SKL SD. Semua Hak Dilindungi.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60, "density": { "enable": true, "value_area": 800 }},
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.4 },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+<!-- Tombol WhatsApp Floating -->
+<a href="https://wa.me/?text=Silakan%20yang%20memerlukan%20aplikasi%20Transkrip%20nilai%20dan%20SKL%202025%2C%20bisa%20kunjungi%20https%3A%2F%2Fpembatik.web.id%2Faplikasi-transkrip-nilai-ijazah-skl-free.html"
+   class="wa-float" target="_blank" title="Bagikan via WhatsApp">
+  <button style="background-color:#25D366; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; display:flex; align-items:center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width:40px; height:40px;"/>
+  </button>
+</a>
+
+
+<style>
+.wa-float {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 40px;
+  right: 20px;
+  z-index: 100;
+}
+
+.wa-float img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.wa-float img:hover {
+  transform: scale(1.1);
+}
+
+.wa-float {
+  animation-delay: 3s;
+}
+
+</style>
+
+</body>
+</html>
